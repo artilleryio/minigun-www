@@ -1,0 +1,44 @@
+!= partial("_navbar")
+
+.container
+  .row
+    .col-sm-10.col-sm-offset-1
+      h1 Frequently Asked Questions
+
+      hr
+
+      h2 What is Minigun?
+
+      p Minigun is a tool for generating load on HTTP and WebSocket-based applications. It provides support for scripting complex virtual user interactions (for example acquiring an auth token, performing a search operation, and then loading one of the search results), as well as detailed stats and graphical reports to help analyse performance.
+
+      h2 What can be tested with Minigun?
+
+      p Minigun is great for testing API servers, microservices or any applications that speak HTTP or WebSockets.
+
+      h2 How is Minigun different than ab / JMeter / Gatling?
+
+      p Minigun has a strong focus on developer happiness and a batteries-included philosophy.
+
+      p Minigun is open-source like ab, JMeter and Gatling.
+
+      p Minigun has a "quick" mode which allows for it to be used in a manner similar to ab. JMeter and Gatling require that a full scenario be written for every test.
+
+      p Minigun supports scripting virtual user behavior like JMeter and Gatling (but not ab).
+
+      p Minigun uses JSON or JS for scripting, whereas Gatling uses Scala and JMeter uses XML.
+
+      p JMeter and Gatling run on the JVM, whereas Minigun is written in Node.js making it easier to install and more lightweight.
+
+      p Minigun has WebSocket support out of the box, unlike JMeter or Gatling which require plugins (ab only supports HTTP).
+
+      h2 How much load can I generate with Minigun?
+
+      p You can expect to generate around 300 RPS on an entry level VPS, like a Digital Ocean $5 droplet. We are working on an extensive suite of benchmarks to be published soon.
+
+      p If you run Minigun in distributed mode, then the load is only constrained by the number of machines and their specs.
+
+      h2 Is there a hosted version of Minigun?
+
+      p Not yet, but we are working on a version of Minigun for the <a href="https://aws.amazon.com/marketplace">AWS Marketplace</a>. Follow <a href="https://twitter.com/ShoreditchOps">@ShoreditchOps</a> for updates.
+
+  != partial("_footer")

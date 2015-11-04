@@ -1,0 +1,41 @@
+!= partial("_navbar")
+
+.container
+  .row
+    .col-sm-10.col-sm-offset-1
+      .jumbotron
+        .row
+          .col-sm-12
+            h1 Load-testing in Node.js
+
+        .row
+          .col-sm-12
+            p Minigun helps you make your applications more performant, reliable and scalable.
+            pre.
+              $ npm install -g minigun
+              $ minigun quick --duration 60 --rate 100 https://minigun.io/
+        .row
+          .col-sm-12(style="text-align: center")
+            a.btn.btn-success.btn-lg(href="https://github.com/shoreditch-ops/minigun/wiki/Quickstart-Guide") Get started with Minigun
+
+  .row
+    .col-sm-5.col-sm-offset-1
+      h2 Features
+      ul
+        li HTTP &amp; WebSocket support (Socket.io and XMPP are in the works)
+        li Support for complex scenarios
+        li Detailed reports as JSON (great for scripting)
+        li Detailed graphical reports (self-contained HTML, great for sharing)
+        li Good performance (~300 RPS on an entry level VPS)
+        li Open-source &amp; free
+    .col-sm-5
+      h2 Use Cases
+      ul
+        li Benchmark your API while in development to make sure it performs well
+        li Run continous performance test with your CI server to make sure new code does not cause performance regressions
+        li Benchmark a framework / library / server you may use to get a feel for its performance
+
+    .row
+      .col-sm-10.col-sm-offset-1
+
+  != partial("_footer")
