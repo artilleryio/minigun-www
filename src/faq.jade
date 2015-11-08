@@ -15,21 +15,21 @@
 
       p Minigun is great for testing API servers, microservices or any applications that speak HTTP or WebSockets.
 
-      h2 How is Minigun different than ab / JMeter / Gatling?
+      h2 How is Minigun different than ab / wrk / JMeter / Gatling?
 
       p Minigun has a strong focus on developer happiness and a batteries-included philosophy.
 
-      p Minigun is open-source like ab, JMeter and Gatling.
+      p Minigun is open-source like ab, wrk, JMeter and Gatling.
 
-      p Minigun has a "quick" mode which allows for it to be used in a manner similar to ab. JMeter and Gatling require that a full scenario be written for every test.
+      p Minigun has a "quick" mode which allows for it to be used in a manner similar to ab or wrk. JMeter and Gatling require that a full scenario be written for every test.
 
       p Minigun supports scripting virtual user behavior like JMeter and Gatling (but not ab).
 
-      p Minigun uses JSON or JS for scripting, whereas Gatling uses Scala and JMeter uses XML.
+      p Minigun uses JSON or JS for scripting, whereas Gatling uses Scala, JMeter uses XML and wrk uses Lua.
 
-      p JMeter and Gatling run on the JVM, whereas Minigun is written in Node.js making it easier to install and more lightweight.
+      p JMeter and Gatling run on the JVM, whereas Minigun is written in Node.js making it easier to install and more lightweight. ab and wrk are written in C.
 
-      p Minigun has WebSocket support out of the box, unlike JMeter or Gatling which require plugins (ab only supports HTTP).
+      p Minigun has WebSocket support out of the box, like Gatling. JMeter requires a plugin (ab and wrk only support HTTP).
 
       h2 How much load can I generate with Minigun?
 
